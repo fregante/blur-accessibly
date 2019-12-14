@@ -1,0 +1,50 @@
+{
+  "name": "blur-accessibly",
+  "version": "0.0.0",
+  "description": "Use `element.blur()` without losing the `tab` position",
+  "keywords": [
+    "a11y",
+    "accessibility",
+    "dom",
+    "field",
+    "html",
+    "input",
+    "tabindex",
+    "textarea"
+  ],
+  "repository": "fregante/blur-accessibly",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "test": "tsc && xo",
+    "watch": "tsc --watch"
+  },
+  "xo": {
+    "envs": [
+      "browser"
+    ],
+    "extensions": [
+      "ts"
+    ],
+    "overrides": [
+      {
+        "files": "**/*.ts",
+        "extends": "xo-typescript"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@sindresorhus/tsconfig": "^0.6.0",
+    "@typescript-eslint/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/parser": "^2.11.0",
+    "eslint-config-xo-typescript": "^0.23.0",
+    "typescript": "^3.7.3",
+    "xo": "^0.25.3"
+  },
+  "type": "module"
+}
