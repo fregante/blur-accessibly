@@ -14,14 +14,14 @@ export default function blurAccessibly(element: HTMLElement): void {
 		const range = new Range();
 
 		if (canUseFullSelection) {
+			range.selectNodeContents(element);
+		} else {
 			const focusHolder = new Text();
 			element.after(focusHolder);
 			range.selectNodeContents(focusHolder);
 			setTimeout(() => {
 				focusHolder.remove();
 			});
-		} else {
-			range.selectNodeContents(element);
 		}
 
 		const selection = getSelection()!;
