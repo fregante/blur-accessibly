@@ -1,6 +1,6 @@
 {
   "name": "blur-accessibly",
-  "version": "0.0.0",
+  "version": "0.9.0",
   "description": "Use `element.blur()` without losing the `tab` position",
   "keywords": [
     "a11y",
