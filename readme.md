@@ -1,3 +1,7 @@
+# Deprecated ⚠️
+
+Chrome 79 and Firefox 74 (at least) finally fixed the native `.blur()` method, so this module is no longer necessary :tada:
+
 # blur-accessibly [![][badge-gzip]][link-npm]
 
   [badge-gzip]: https://img.shields.io/bundlephobia/minzip/blur-accessibly.svg?label=gzipped
